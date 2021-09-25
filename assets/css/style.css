@@ -264,8 +264,8 @@ textarea {
 .drawer__icon-parts, .drawer__icon-parts::before, .drawer__icon-parts::after {
   background: #c4c4c4;
   display: block;
-  width: 26px;
-  height: 2px;
+  width: 70px;
+  height: 4px;
   position: absolute;
   top: 0;
   right: 0;
@@ -279,11 +279,11 @@ textarea {
 }
 
 .drawer__icon-parts::before {
-  top: 16px;
+  top: 26px;
 }
 
 .drawer__icon-parts::after {
-  top: -16px;
+  top: -26px;
 }
 
 .drawer__overlay {
@@ -409,6 +409,10 @@ textarea {
   text-align: center;
 }
 
+.table__date th {
+  background: #c4c4c4;
+}
+
 .table__wx {
   text-align: center;
 }
@@ -456,7 +460,7 @@ td {
 }
 
 .card__wrapper::before {
-  content: '';
+  content: "";
   display: block;
   padding-top: 100%;
 }
@@ -480,7 +484,7 @@ td {
 }
 
 .card__item::before {
-  content: '';
+  content: "";
   vertical-align: middle;
   width: 0px;
   display: inline-block;
@@ -492,24 +496,36 @@ td {
   max-height: 100%;
 }
 
+.today__action--dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 50px;
+}
+
 .today__action--select {
   width: 100%;
+  height: 100%;
 }
 
 @media (min-width: 1025px) {
   .today__action--select {
-    width: 240px;
+    width: 20%;
   }
 }
 
 .today__action--select select {
+  height: 100%;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 700;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   border-radius: 0;
-  padding: 10px 16px;
+  padding: 5px 10px;
   border: 1px solid #c4c4c4;
   font-size: 24px;
   -webkit-box-shadow: none;
@@ -527,5 +543,194 @@ td {
   .today__action--select select {
     font-size: 16px;
   }
+}
+
+.today__action--select select option {
+  color: #333;
+}
+
+.today__action--select select option:first-child {
+  display: none;
+}
+
+.today__action--input {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 1025px) {
+  .today__action--input {
+    width: 40%;
+  }
+}
+
+.today__action--input input {
+  width: 100%;
+  font-size: 24px;
+  color: "Noto Sans JP", sans-serif;
+  border: 1px solid #333;
+  border-radius: 0;
+  height: 100%;
+}
+
+.today__action--input input:focus {
+  outline: 0;
+}
+
+.today__action--btn {
+  text-align: center;
+  height: 100%;
+}
+
+@media (min-width: 1025px) {
+  .today__action--btn {
+    width: 20%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .today__action--btn {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .today__action--btn {
+    margin-top: 30px;
+  }
+}
+
+.today__action--btn input {
+  width: 100%;
+  font-size: 24px;
+  color: #fff;
+  border: 1px solid #333;
+  background-color: #333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.today__action--btn input:hover {
+  opacity: 0.6;
+}
+
+.table__old {
+  border-collapse: collapse;
+  border: 1px solid #333;
+  background: #fff;
+  font-size: 24px;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.table__old--list {
+  text-align: center;
+}
+
+.table__old--list th {
+  background: #c4c4c4;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.table__old--list th:first-child {
+  width: 200px;
+}
+
+.table__old--list th:last-child {
+  width: 300px;
+}
+
+.table__old--wx td {
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.table__old--wx td p {
+  font-size: 24px;
+}
+
+.table__old--wx td img {
+  width: 60%;
+}
+
+.share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.share h2 {
+  width: 40%;
+  text-align: center;
+}
+
+.facebook {
+  background-color: #2e4a88;
+  -webkit-box-shadow: 0 4px 0 #1b3d82;
+          box-shadow: 0 4px 0 #1b3d82;
+  text-shadow: 0 -1px -1px #1b3d82;
+  display: inline-block;
+  position: relative;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  padding: 14px 80px;
+  margin-right: 20px;
+}
+
+.facebook:hover {
+  background-color: #354f84;
+}
+
+.facebook:active {
+  top: 2px;
+  -webkit-box-shadow: 0 2px 0 #1b3d82;
+          box-shadow: 0 2px 0 #1b3d82;
+}
+
+.twitter {
+  background-color: #008dde;
+  -webkit-box-shadow: 0 4px 0 #0078bd;
+          box-shadow: 0 4px 0 #0078bd;
+  display: inline-block;
+  position: relative;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  padding: 14px 80px;
+}
+
+.twitter:active {
+  top: 2px;
+  -webkit-box-shadow: 0 2px 0 #0078bd;
+          box-shadow: 0 2px 0 #0078bd;
+}
+
+.twitter:hover {
+  background-color: #1397d8;
+}
+
+.footer {
+  width: 100%;
+  background: #006bb2;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
 }
 /*# sourceMappingURL=style.css.map */
