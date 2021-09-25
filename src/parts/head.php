@@ -4,6 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>W.news</title>
 	<!-- BootstrapのCSS読み込み -->
+	<link rel="stylesheet" href="/assets/css/reset.css">
 	<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/assets/css/style.css" rel="stylesheet">
 	<!-- jQuery読み込み -->
