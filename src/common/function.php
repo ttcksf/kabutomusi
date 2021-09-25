@@ -148,3 +148,12 @@
 	    $result = $stmt->fetchAll();
 	    return $result;
     }
+
+     /* テーブルを全て取得する */
+     /* SHOW TABLE STATUS LIKE 'org%' はテーブル名がorgで始まるもののみを取得 */
+    function getTableList(){
+        $sql = "SHOW TABLE STATUS LIKE 'org%'";
+        $stmt = getDbh()->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }
