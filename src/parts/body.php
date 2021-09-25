@@ -1,15 +1,7 @@
 <body>
 <header class="header">
         <div class="header__inner inner">
-            <h1 class="header__logo"><a href="/"><img src="/assets/img/wnews-logo.png" alt=""></a></h1>
-            <!-- <ul class="header__nav">
-                <li><a href="" class="is-active">トップページ</a></li>
-                <li><a href="">お知らせ</a></li>
-                <li><a href="">キャスト一覧</a></li>
-                <li><a href="">店内写真</a></li>
-                <li><a href="">オンラインガールズバー</a></li>
-                <li><a href="">ログイン</a></li>
-            </ul> -->
+            <h1 class="header__logo"><a href="/"><img src="/assets/img/wnews_logo.png" alt=""></a></h1>
             <div class="drawer">
                 <input type="checkbox" class="drawer__checkbox" id="drawerCheckbox">
                 <label for="drawerCheckbox" class="drawer__icon">
